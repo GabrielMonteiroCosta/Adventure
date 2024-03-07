@@ -39,6 +39,10 @@ header ul{
     align-items: center;
 }
 
+header ul h2{
+    align-items:flex-start;
+}
+
 header ul li{
     list-style: none;
     margin-left: 20px;
@@ -55,6 +59,10 @@ header ul li a:hover,
 header ul li a.ativo{
     background: #fff;
     color: #2b1055;
+}
+
+header ul li a.ativo:hover{
+    background-color: #ffddff;
 }
 
 section::before{
@@ -115,6 +123,10 @@ section img#mountains_front{
     font-size: 1.4em;
     z-index: 9;
     transform: translateY(100px);
+}
+
+#btn:hover{
+    background-color: #ffddff;
 }
 
 .sec{
