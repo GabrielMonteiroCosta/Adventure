@@ -1,48 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Adventures</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/index-Style.css" >
+    <title>Adventure</title>
 </head>
-
-<body class="body" background="">
+<body>
     <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <h1 class="título">Adventures</h1>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><button class="btn1"><a href="#" class="nav-link">Jogar </button></a></li>
-                    <li class="nav-item"><button class="btn1"><a href="#" class="nav-link">Sobre o Jogo</button></a></li>
-                    <li class="nav-item"><button class="btn1"><a href="#" class="nav-link"> Sobre Nós!</button></a></li>
-                </ul>
-            </div>
-            <div class="login-button">
-                <button><a href="login.html">Login</a></button>
-            </div>
-
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
-            </div>
-        </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><button class="btn1"><a href="#" class="nav-link">Jogar Adventures</button></a></li>
-                <li class="nav-item"><button class="btn1"><a href="#" class="nav-link">Sobre o Jogo</button></a></li>
-                <li class="nav-item"><button class="btn1"><a href="#" class="nav-link"> Sobre Nós!</button></a></li>
-            </ul>
-
-            <div class="login-button">
-                <button><a href="login.html">Login</a></button>
-            </div>
-        </div>
+        <h3>logo</h3>
+        <ul>
+            <li><a href="Inicio" class="ativo">Início</a></li>
+            <li><a href="Nosso Jogo">Nosso Jogo!</a></li>
+            <li><a href="Sobre Nós">Sobre Nós</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
     </header>
+    <section>
+        <img src="assets/img/stars.png" id="stars">
+        <img src="assets/img/moon.png" id="moon">
+        <h2 id="text">Moon Light</h2>
+        <a href="#sec" id="btn">Explorar</a>
+        <img src="assets/img/mountains_behind.png" id="mountains_behind">
+        <img src="assets/img/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Teste</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut vitae optio magni rem dolore suscipit nesciunt sapiente impedit dolorum voluptatem laborum nostrum, ducimus explicabo. Perspiciatis voluptatibus qui expedita tenetur.</p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+        let btn = document.getElementById('btn');
+        let text = document.getElementById('text');
+        let header = document.querySelector('header');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value *0.25 + 'px';
+            moon.style.top = value *0.75 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 2 + 'px';
+            header.style.top = value * 0.5 + 'px';
 
-    <script src="assets/js/script.js"></script>
+        })
+</script>
 </body>
 </html>
