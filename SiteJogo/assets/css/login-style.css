@@ -48,7 +48,7 @@
 }
 
 .container button{
-    background-color: #512da8;
+    background-color: tomato;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -62,8 +62,12 @@
 }
 
 .container button.escondido{
-    background-color: transparent;
+    background-color: tomato;
     border-color: #fff;
+}
+
+.container button:hover{
+    background-color: #512da8;
 }
 
 .container form{
@@ -99,11 +103,11 @@
     width: 50%;
     z-index: 2;
 }
-
-.container.active .sign-in{
+/*Troca*/
+.container.active .login{
     transform: translateX(100%);
 }
-
+/*****************/
 .sign-up{
     left: 0;
     width: 50%;
@@ -144,6 +148,11 @@
     height:30px;
 }
 
+.icone-social a:hover{
+    border: 1px solid #333;
+    border-radius: 20%;
+}
+
 .painel-container{
     position: absolute;
     top: 0;
@@ -164,7 +173,7 @@
 .painel{
     background-color: #512da8;
     height: 100%;
-    background: linear-gradient(to right, #5c6bc0, #512da8);
+    background: linear-gradient(to right, tomato, #512da8);
     color: #fff;
     position: relative;
     left: -100%;
