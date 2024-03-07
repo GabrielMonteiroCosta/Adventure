@@ -70,6 +70,14 @@
     background-color: #512da8;
 }
 
+.container button.cadastro{
+    background-color: tomato;
+    border-color: #fff;
+}
+.container button.cadastro:hover{
+    background-color: #512da8;
+}
+
 .container form{
     background-color: #fff;
     display: flex;
@@ -217,4 +225,12 @@
 .painel-direta{
     right: 0;
     transform: translateX(0);
+}
+
+.btn{
+    background-color: white;
+}
+
+.btn:hover{
+    background-color: #333;
 }
